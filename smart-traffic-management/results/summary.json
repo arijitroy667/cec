@@ -1,0 +1,1095 @@
+{
+  "created": "2026-11-25 14:50:05",
+  "reps": 5,
+  "default_network": {
+    "rtt_ms": 100.0,
+    "bandwidth_mbit": 50.0
+  },
+  "workload": [
+    {
+      "workload": "small",
+      "strategy": "local",
+      "runs": 5,
+      "task_execution_mean_s": 0.0451,
+      "task_execution_sd_s": 0.018,
+      "edge_execution_mean_s": 0.0451,
+      "cloud_execution_mean_s": 0.0,
+      "e2e_mean_s": 0.0451,
+      "e2e_sd_s": 0.018,
+      "e2e_min_s": 0.0272,
+      "e2e_max_s": 0.065,
+      "communication_mean_s": 0.0,
+      "mb_to_cloud": 0.0,
+      "fog_round_trip_mean_s": 0.0142,
+      "digests": [
+        "2fe7c2ff8e54a2e3"
+      ]
+    },
+    {
+      "workload": "small",
+      "strategy": "full",
+      "runs": 5,
+      "task_execution_mean_s": 0.029,
+      "task_execution_sd_s": 0.0053,
+      "edge_execution_mean_s": 0.0,
+      "cloud_execution_mean_s": 0.029,
+      "e2e_mean_s": 0.2207,
+      "e2e_sd_s": 0.0061,
+      "e2e_min_s": 0.2156,
+      "e2e_max_s": 0.2309,
+      "communication_mean_s": 0.1917,
+      "mb_to_cloud": 0.459,
+      "fog_round_trip_mean_s": 0.0142,
+      "digests": [
+        "2fe7c2ff8e54a2e3"
+      ]
+    },
+    {
+      "workload": "small",
+      "strategy": "partial",
+      "runs": 5,
+      "task_execution_mean_s": 0.0246,
+      "task_execution_sd_s": 0.0025,
+      "edge_execution_mean_s": 0.0077,
+      "cloud_execution_mean_s": 0.0169,
+      "e2e_mean_s": 0.1449,
+      "e2e_sd_s": 0.0029,
+      "e2e_min_s": 0.1415,
+      "e2e_max_s": 0.1489,
+      "communication_mean_s": 0.1203,
+      "mb_to_cloud": 0.068,
+      "fog_round_trip_mean_s": 0.0147,
+      "digests": [
+        "2fe7c2ff8e54a2e3"
+      ]
+    },
+    {
+      "workload": "medium",
+      "strategy": "local",
+      "runs": 5,
+      "task_execution_mean_s": 0.7891,
+      "task_execution_sd_s": 0.11,
+      "edge_execution_mean_s": 0.7891,
+      "cloud_execution_mean_s": 0.0,
+      "e2e_mean_s": 0.7894,
+      "e2e_sd_s": 0.11,
+      "e2e_min_s": 0.6444,
+      "e2e_max_s": 0.9288,
+      "communication_mean_s": 0.0003,
+      "mb_to_cloud": 0.0,
+      "fog_round_trip_mean_s": 0.0244,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "workload": "medium",
+      "strategy": "full",
+      "runs": 5,
+      "task_execution_mean_s": 0.234,
+      "task_execution_sd_s": 0.0252,
+      "edge_execution_mean_s": 0.0,
+      "cloud_execution_mean_s": 0.234,
+      "e2e_mean_s": 1.2497,
+      "e2e_sd_s": 0.0462,
+      "e2e_min_s": 1.2029,
+      "e2e_max_s": 1.3242,
+      "communication_mean_s": 1.0157,
+      "mb_to_cloud": 4.595,
+      "fog_round_trip_mean_s": 0.0148,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "workload": "medium",
+      "strategy": "partial",
+      "runs": 5,
+      "task_execution_mean_s": 0.3221,
+      "task_execution_sd_s": 0.0403,
+      "edge_execution_mean_s": 0.1723,
+      "cloud_execution_mean_s": 0.1498,
+      "e2e_mean_s": 0.5176,
+      "e2e_sd_s": 0.0436,
+      "e2e_min_s": 0.4491,
+      "e2e_max_s": 0.5638,
+      "communication_mean_s": 0.1955,
+      "mb_to_cloud": 0.447,
+      "fog_round_trip_mean_s": 0.0144,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "workload": "large",
+      "strategy": "local",
+      "runs": 5,
+      "task_execution_mean_s": 3.0953,
+      "task_execution_sd_s": 0.1411,
+      "edge_execution_mean_s": 3.0953,
+      "cloud_execution_mean_s": 0.0,
+      "e2e_mean_s": 3.0964,
+      "e2e_sd_s": 0.1412,
+      "e2e_min_s": 2.9727,
+      "e2e_max_s": 3.2855,
+      "communication_mean_s": 0.0011,
+      "mb_to_cloud": 0.0,
+      "fog_round_trip_mean_s": 0.0359,
+      "digests": [
+        "f960a0d1156e0b74"
+      ]
+    },
+    {
+      "workload": "large",
+      "strategy": "full",
+      "runs": 5,
+      "task_execution_mean_s": 0.902,
+      "task_execution_sd_s": 0.0741,
+      "edge_execution_mean_s": 0.0,
+      "cloud_execution_mean_s": 0.902,
+      "e2e_mean_s": 4.6235,
+      "e2e_sd_s": 0.0894,
+      "e2e_min_s": 4.5471,
+      "e2e_max_s": 4.7546,
+      "communication_mean_s": 3.7215,
+      "mb_to_cloud": 18.377,
+      "fog_round_trip_mean_s": 0.015,
+      "digests": [
+        "f960a0d1156e0b74"
+      ]
+    },
+    {
+      "workload": "large",
+      "strategy": "partial",
+      "runs": 5,
+      "task_execution_mean_s": 1.4516,
+      "task_execution_sd_s": 0.0489,
+      "edge_execution_mean_s": 0.875,
+      "cloud_execution_mean_s": 0.5766,
+      "e2e_mean_s": 1.8154,
+      "e2e_sd_s": 0.044,
+      "e2e_min_s": 1.7814,
+      "e2e_max_s": 1.8852,
+      "communication_mean_s": 0.3637,
+      "mb_to_cloud": 1.236,
+      "fog_round_trip_mean_s": 0.0149,
+      "digests": [
+        "f960a0d1156e0b74"
+      ]
+    }
+  ],
+  "network": [
+    {
+      "rtt_ms": 20,
+      "bandwidth_mbit": 50,
+      "strategy": "local",
+      "runs": 3,
+      "task_execution_mean_s": 0.6473,
+      "task_execution_sd_s": 0.046,
+      "edge_execution_mean_s": 0.6473,
+      "cloud_execution_mean_s": 0.0,
+      "e2e_mean_s": 0.6476,
+      "e2e_sd_s": 0.046,
+      "e2e_min_s": 0.6197,
+      "e2e_max_s": 0.7007,
+      "communication_mean_s": 0.0002,
+      "mb_to_cloud": 0.0,
+      "fog_round_trip_mean_s": 0.0156,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 20,
+      "bandwidth_mbit": 50,
+      "strategy": "full",
+      "runs": 3,
+      "task_execution_mean_s": 0.1995,
+      "task_execution_sd_s": 0.0142,
+      "edge_execution_mean_s": 0.0,
+      "cloud_execution_mean_s": 0.1995,
+      "e2e_mean_s": 1.1082,
+      "e2e_sd_s": 0.0086,
+      "e2e_min_s": 1.0998,
+      "e2e_max_s": 1.117,
+      "communication_mean_s": 0.9086,
+      "mb_to_cloud": 4.595,
+      "fog_round_trip_mean_s": 0.0141,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 20,
+      "bandwidth_mbit": 50,
+      "strategy": "partial",
+      "runs": 3,
+      "task_execution_mean_s": 0.3223,
+      "task_execution_sd_s": 0.0255,
+      "edge_execution_mean_s": 0.1778,
+      "cloud_execution_mean_s": 0.1445,
+      "e2e_mean_s": 0.4355,
+      "e2e_sd_s": 0.0275,
+      "e2e_min_s": 0.4179,
+      "e2e_max_s": 0.4672,
+      "communication_mean_s": 0.1132,
+      "mb_to_cloud": 0.447,
+      "fog_round_trip_mean_s": 0.014,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 100,
+      "bandwidth_mbit": 50,
+      "strategy": "local",
+      "runs": 3,
+      "task_execution_mean_s": 0.6768,
+      "task_execution_sd_s": 0.0436,
+      "edge_execution_mean_s": 0.6768,
+      "cloud_execution_mean_s": 0.0,
+      "e2e_mean_s": 0.6771,
+      "e2e_sd_s": 0.0434,
+      "e2e_min_s": 0.6274,
+      "e2e_max_s": 0.707,
+      "communication_mean_s": 0.0004,
+      "mb_to_cloud": 0.0,
+      "fog_round_trip_mean_s": 0.0357,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 100,
+      "bandwidth_mbit": 50,
+      "strategy": "full",
+      "runs": 3,
+      "task_execution_mean_s": 0.191,
+      "task_execution_sd_s": 0.0078,
+      "edge_execution_mean_s": 0.0,
+      "cloud_execution_mean_s": 0.191,
+      "e2e_mean_s": 1.1468,
+      "e2e_sd_s": 0.0186,
+      "e2e_min_s": 1.1254,
+      "e2e_max_s": 1.1585,
+      "communication_mean_s": 0.9558,
+      "mb_to_cloud": 4.595,
+      "fog_round_trip_mean_s": 0.0138,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 100,
+      "bandwidth_mbit": 50,
+      "strategy": "partial",
+      "runs": 3,
+      "task_execution_mean_s": 0.3658,
+      "task_execution_sd_s": 0.0368,
+      "edge_execution_mean_s": 0.2167,
+      "cloud_execution_mean_s": 0.1491,
+      "e2e_mean_s": 0.5592,
+      "e2e_sd_s": 0.0364,
+      "e2e_min_s": 0.5272,
+      "e2e_max_s": 0.5988,
+      "communication_mean_s": 0.1934,
+      "mb_to_cloud": 0.447,
+      "fog_round_trip_mean_s": 0.0142,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 300,
+      "bandwidth_mbit": 50,
+      "strategy": "local",
+      "runs": 3,
+      "task_execution_mean_s": 0.6812,
+      "task_execution_sd_s": 0.0723,
+      "edge_execution_mean_s": 0.6812,
+      "cloud_execution_mean_s": 0.0,
+      "e2e_mean_s": 0.6814,
+      "e2e_sd_s": 0.0723,
+      "e2e_min_s": 0.6122,
+      "e2e_max_s": 0.7565,
+      "communication_mean_s": 0.0002,
+      "mb_to_cloud": 0.0,
+      "fog_round_trip_mean_s": 0.0143,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 300,
+      "bandwidth_mbit": 50,
+      "strategy": "full",
+      "runs": 3,
+      "task_execution_mean_s": 0.2041,
+      "task_execution_sd_s": 0.0241,
+      "edge_execution_mean_s": 0.0,
+      "cloud_execution_mean_s": 0.2041,
+      "e2e_mean_s": 1.4061,
+      "e2e_sd_s": 0.0591,
+      "e2e_min_s": 1.36,
+      "e2e_max_s": 1.4727,
+      "communication_mean_s": 1.2021,
+      "mb_to_cloud": 4.595,
+      "fog_round_trip_mean_s": 0.0143,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 300,
+      "bandwidth_mbit": 50,
+      "strategy": "partial",
+      "runs": 3,
+      "task_execution_mean_s": 0.3682,
+      "task_execution_sd_s": 0.0564,
+      "edge_execution_mean_s": 0.215,
+      "cloud_execution_mean_s": 0.1532,
+      "e2e_mean_s": 0.7638,
+      "e2e_sd_s": 0.0599,
+      "e2e_min_s": 0.7176,
+      "e2e_max_s": 0.8315,
+      "communication_mean_s": 0.3956,
+      "mb_to_cloud": 0.447,
+      "fog_round_trip_mean_s": 0.0142,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 100,
+      "bandwidth_mbit": 10,
+      "strategy": "local",
+      "runs": 3,
+      "task_execution_mean_s": 0.6804,
+      "task_execution_sd_s": 0.0909,
+      "edge_execution_mean_s": 0.6804,
+      "cloud_execution_mean_s": 0.0,
+      "e2e_mean_s": 0.6806,
+      "e2e_sd_s": 0.0911,
+      "e2e_min_s": 0.6174,
+      "e2e_max_s": 0.785,
+      "communication_mean_s": 0.0003,
+      "mb_to_cloud": 0.0,
+      "fog_round_trip_mean_s": 0.0144,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 100,
+      "bandwidth_mbit": 10,
+      "strategy": "full",
+      "runs": 3,
+      "task_execution_mean_s": 0.207,
+      "task_execution_sd_s": 0.0261,
+      "edge_execution_mean_s": 0.0,
+      "cloud_execution_mean_s": 0.207,
+      "e2e_mean_s": 4.1848,
+      "e2e_sd_s": 0.0376,
+      "e2e_min_s": 4.1554,
+      "e2e_max_s": 4.2272,
+      "communication_mean_s": 3.9777,
+      "mb_to_cloud": 4.595,
+      "fog_round_trip_mean_s": 0.0148,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 100,
+      "bandwidth_mbit": 10,
+      "strategy": "partial",
+      "runs": 3,
+      "task_execution_mean_s": 0.3181,
+      "task_execution_sd_s": 0.0493,
+      "edge_execution_mean_s": 0.1655,
+      "cloud_execution_mean_s": 0.1525,
+      "e2e_mean_s": 0.8236,
+      "e2e_sd_s": 0.0272,
+      "e2e_min_s": 0.8005,
+      "e2e_max_s": 0.8536,
+      "communication_mean_s": 0.5056,
+      "mb_to_cloud": 0.447,
+      "fog_round_trip_mean_s": 0.0143,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 100,
+      "bandwidth_mbit": 200,
+      "strategy": "local",
+      "runs": 3,
+      "task_execution_mean_s": 0.7182,
+      "task_execution_sd_s": 0.076,
+      "edge_execution_mean_s": 0.7182,
+      "cloud_execution_mean_s": 0.0,
+      "e2e_mean_s": 0.7185,
+      "e2e_sd_s": 0.0761,
+      "e2e_min_s": 0.6731,
+      "e2e_max_s": 0.8064,
+      "communication_mean_s": 0.0003,
+      "mb_to_cloud": 0.0,
+      "fog_round_trip_mean_s": 0.0143,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 100,
+      "bandwidth_mbit": 200,
+      "strategy": "full",
+      "runs": 3,
+      "task_execution_mean_s": 0.2,
+      "task_execution_sd_s": 0.0172,
+      "edge_execution_mean_s": 0.0,
+      "cloud_execution_mean_s": 0.2,
+      "e2e_mean_s": 0.6302,
+      "e2e_sd_s": 0.0333,
+      "e2e_min_s": 0.6001,
+      "e2e_max_s": 0.6659,
+      "communication_mean_s": 0.4302,
+      "mb_to_cloud": 4.595,
+      "fog_round_trip_mean_s": 0.0142,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    },
+    {
+      "rtt_ms": 100,
+      "bandwidth_mbit": 200,
+      "strategy": "partial",
+      "runs": 3,
+      "task_execution_mean_s": 0.3351,
+      "task_execution_sd_s": 0.0541,
+      "edge_execution_mean_s": 0.1912,
+      "cloud_execution_mean_s": 0.1439,
+      "e2e_mean_s": 0.4767,
+      "e2e_sd_s": 0.0553,
+      "e2e_min_s": 0.4294,
+      "e2e_max_s": 0.5375,
+      "communication_mean_s": 0.1416,
+      "mb_to_cloud": 0.447,
+      "fog_round_trip_mean_s": 0.0149,
+      "digests": [
+        "b59e0aa66ec3a41f"
+      ]
+    }
+  ],
+  "decision_engine": [
+    {
+      "experiment": "workload",
+      "config": "small",
+      "measured_best": "local",
+      "engine_recommendation": "local",
+      "match": true
+    },
+    {
+      "experiment": "workload",
+      "config": "medium",
+      "measured_best": "partial",
+      "engine_recommendation": "partial",
+      "match": true
+    },
+    {
+      "experiment": "workload",
+      "config": "large",
+      "measured_best": "partial",
+      "engine_recommendation": "partial",
+      "match": true
+    },
+    {
+      "experiment": "network",
+      "config": "20/50",
+      "measured_best": "partial",
+      "engine_recommendation": "partial",
+      "match": true
+    },
+    {
+      "experiment": "network",
+      "config": "100/50",
+      "measured_best": "partial",
+      "engine_recommendation": "partial",
+      "match": true
+    },
+    {
+      "experiment": "network",
+      "config": "300/50",
+      "measured_best": "local",
+      "engine_recommendation": "partial",
+      "match": false
+    },
+    {
+      "experiment": "network",
+      "config": "100/10",
+      "measured_best": "local",
+      "engine_recommendation": "local",
+      "match": true
+    },
+    {
+      "experiment": "network",
+      "config": "100/200",
+      "measured_best": "partial",
+      "engine_recommendation": "partial",
+      "match": true
+    }
+  ],
+  "docker_stats": [
+    {
+      "phase": "idle",
+      "container": "cloud-node",
+      "samples": 1,
+      "cpu_pct_peak": 11.82,
+      "mem_mb_peak": 39.6,
+      "cpu_pct_mean": 11.82
+    },
+    {
+      "phase": "idle",
+      "container": "edge-node",
+      "samples": 1,
+      "cpu_pct_peak": 9.12,
+      "mem_mb_peak": 30.5,
+      "cpu_pct_mean": 9.12
+    },
+    {
+      "phase": "idle",
+      "container": "fog-node",
+      "samples": 1,
+      "cpu_pct_peak": 1.68,
+      "mem_mb_peak": 26.2,
+      "cpu_pct_mean": 1.68
+    },
+    {
+      "phase": "large/full",
+      "container": "cloud-node",
+      "samples": 16,
+      "cpu_pct_peak": 159.96,
+      "mem_mb_peak": 163.7,
+      "cpu_pct_mean": 35.18
+    },
+    {
+      "phase": "large/full",
+      "container": "edge-node",
+      "samples": 16,
+      "cpu_pct_peak": 49.43,
+      "mem_mb_peak": 123.8,
+      "cpu_pct_mean": 11.83
+    },
+    {
+      "phase": "large/full",
+      "container": "fog-node",
+      "samples": 16,
+      "cpu_pct_peak": 0.37,
+      "mem_mb_peak": 26.4,
+      "cpu_pct_mean": 0.08
+    },
+    {
+      "phase": "large/local",
+      "container": "cloud-node",
+      "samples": 11,
+      "cpu_pct_peak": 0.4,
+      "mem_mb_peak": 69.8,
+      "cpu_pct_mean": 0.09
+    },
+    {
+      "phase": "large/local",
+      "container": "edge-node",
+      "samples": 11,
+      "cpu_pct_peak": 49.59,
+      "mem_mb_peak": 86.5,
+      "cpu_pct_mean": 48.95
+    },
+    {
+      "phase": "large/local",
+      "container": "fog-node",
+      "samples": 11,
+      "cpu_pct_peak": 0.66,
+      "mem_mb_peak": 26.2,
+      "cpu_pct_mean": 0.18
+    },
+    {
+      "phase": "large/partial",
+      "container": "cloud-node",
+      "samples": 7,
+      "cpu_pct_peak": 108.36,
+      "mem_mb_peak": 121.3,
+      "cpu_pct_mean": 54.77
+    },
+    {
+      "phase": "large/partial",
+      "container": "edge-node",
+      "samples": 7,
+      "cpu_pct_peak": 49.5,
+      "mem_mb_peak": 93.3,
+      "cpu_pct_mean": 31.48
+    },
+    {
+      "phase": "large/partial",
+      "container": "fog-node",
+      "samples": 7,
+      "cpu_pct_peak": 0.37,
+      "mem_mb_peak": 26.3,
+      "cpu_pct_mean": 0.15
+    },
+    {
+      "phase": "medium/full",
+      "container": "cloud-node",
+      "samples": 4,
+      "cpu_pct_peak": 50.41,
+      "mem_mb_peak": 69.7,
+      "cpu_pct_mean": 35.36
+    },
+    {
+      "phase": "medium/full",
+      "container": "edge-node",
+      "samples": 4,
+      "cpu_pct_peak": 32.98,
+      "mem_mb_peak": 56.7,
+      "cpu_pct_mean": 18.66
+    },
+    {
+      "phase": "medium/full",
+      "container": "fog-node",
+      "samples": 4,
+      "cpu_pct_peak": 0.91,
+      "mem_mb_peak": 26.4,
+      "cpu_pct_mean": 0.51
+    },
+    {
+      "phase": "medium/local",
+      "container": "cloud-node",
+      "samples": 3,
+      "cpu_pct_peak": 12.04,
+      "mem_mb_peak": 65.3,
+      "cpu_pct_mean": 4.11
+    },
+    {
+      "phase": "medium/local",
+      "container": "edge-node",
+      "samples": 3,
+      "cpu_pct_peak": 49.43,
+      "mem_mb_peak": 48.5,
+      "cpu_pct_mean": 35.49
+    },
+    {
+      "phase": "medium/local",
+      "container": "fog-node",
+      "samples": 3,
+      "cpu_pct_peak": 0.42,
+      "mem_mb_peak": 26.4,
+      "cpu_pct_mean": 0.28
+    },
+    {
+      "phase": "medium/partial",
+      "container": "cloud-node",
+      "samples": 2,
+      "cpu_pct_peak": 30.24,
+      "mem_mb_peak": 69.6,
+      "cpu_pct_mean": 16.52
+    },
+    {
+      "phase": "medium/partial",
+      "container": "edge-node",
+      "samples": 2,
+      "cpu_pct_peak": 45.4,
+      "mem_mb_peak": 84.3,
+      "cpu_pct_mean": 39.62
+    },
+    {
+      "phase": "medium/partial",
+      "container": "fog-node",
+      "samples": 2,
+      "cpu_pct_peak": 0.72,
+      "mem_mb_peak": 26.2,
+      "cpu_pct_mean": 0.54
+    },
+    {
+      "phase": "net/100ms-10mbit/full",
+      "container": "cloud-node",
+      "samples": 6,
+      "cpu_pct_peak": 28.81,
+      "mem_mb_peak": 111.9,
+      "cpu_pct_mean": 4.81
+    },
+    {
+      "phase": "net/100ms-10mbit/full",
+      "container": "edge-node",
+      "samples": 6,
+      "cpu_pct_peak": 16.64,
+      "mem_mb_peak": 95.4,
+      "cpu_pct_mean": 4.39
+    },
+    {
+      "phase": "net/100ms-10mbit/full",
+      "container": "fog-node",
+      "samples": 6,
+      "cpu_pct_peak": 0.38,
+      "mem_mb_peak": 26.4,
+      "cpu_pct_mean": 0.08
+    },
+    {
+      "phase": "net/100ms-10mbit/local",
+      "container": "cloud-node",
+      "samples": 2,
+      "cpu_pct_peak": 0.15,
+      "mem_mb_peak": 111.9,
+      "cpu_pct_mean": 0.08
+    },
+    {
+      "phase": "net/100ms-10mbit/local",
+      "container": "edge-node",
+      "samples": 2,
+      "cpu_pct_peak": 49.09,
+      "mem_mb_peak": 95.4,
+      "cpu_pct_mean": 24.56
+    },
+    {
+      "phase": "net/100ms-10mbit/local",
+      "container": "fog-node",
+      "samples": 2,
+      "cpu_pct_peak": 0.36,
+      "mem_mb_peak": 26.2,
+      "cpu_pct_mean": 0.19
+    },
+    {
+      "phase": "net/100ms-10mbit/partial",
+      "container": "cloud-node",
+      "samples": 2,
+      "cpu_pct_peak": 34.8,
+      "mem_mb_peak": 111.8,
+      "cpu_pct_mean": 17.45
+    },
+    {
+      "phase": "net/100ms-10mbit/partial",
+      "container": "edge-node",
+      "samples": 2,
+      "cpu_pct_peak": 49.63,
+      "mem_mb_peak": 95.3,
+      "cpu_pct_mean": 33.38
+    },
+    {
+      "phase": "net/100ms-10mbit/partial",
+      "container": "fog-node",
+      "samples": 2,
+      "cpu_pct_peak": 0.35,
+      "mem_mb_peak": 26.4,
+      "cpu_pct_mean": 0.34
+    },
+    {
+      "phase": "net/100ms-200mbit/full",
+      "container": "cloud-node",
+      "samples": 1,
+      "cpu_pct_peak": 31.27,
+      "mem_mb_peak": 111.9,
+      "cpu_pct_mean": 31.27
+    },
+    {
+      "phase": "net/100ms-200mbit/full",
+      "container": "edge-node",
+      "samples": 1,
+      "cpu_pct_peak": 33.91,
+      "mem_mb_peak": 95.4,
+      "cpu_pct_mean": 33.91
+    },
+    {
+      "phase": "net/100ms-200mbit/full",
+      "container": "fog-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.77,
+      "mem_mb_peak": 26.4,
+      "cpu_pct_mean": 0.77
+    },
+    {
+      "phase": "net/100ms-200mbit/local",
+      "container": "cloud-node",
+      "samples": 1,
+      "cpu_pct_peak": 41.17,
+      "mem_mb_peak": 111.8,
+      "cpu_pct_mean": 41.17
+    },
+    {
+      "phase": "net/100ms-200mbit/local",
+      "container": "edge-node",
+      "samples": 1,
+      "cpu_pct_peak": 20.26,
+      "mem_mb_peak": 95.2,
+      "cpu_pct_mean": 20.26
+    },
+    {
+      "phase": "net/100ms-200mbit/local",
+      "container": "fog-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.38,
+      "mem_mb_peak": 26.5,
+      "cpu_pct_mean": 0.38
+    },
+    {
+      "phase": "net/100ms-200mbit/partial",
+      "container": "cloud-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.18,
+      "mem_mb_peak": 111.9,
+      "cpu_pct_mean": 0.18
+    },
+    {
+      "phase": "net/100ms-200mbit/partial",
+      "container": "edge-node",
+      "samples": 1,
+      "cpu_pct_peak": 1.38,
+      "mem_mb_peak": 95.4,
+      "cpu_pct_mean": 1.38
+    },
+    {
+      "phase": "net/100ms-200mbit/partial",
+      "container": "fog-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.41,
+      "mem_mb_peak": 26.4,
+      "cpu_pct_mean": 0.41
+    },
+    {
+      "phase": "net/100ms-50mbit/full",
+      "container": "cloud-node",
+      "samples": 1,
+      "cpu_pct_peak": 37.52,
+      "mem_mb_peak": 113.9,
+      "cpu_pct_mean": 37.52
+    },
+    {
+      "phase": "net/100ms-50mbit/full",
+      "container": "edge-node",
+      "samples": 1,
+      "cpu_pct_peak": 6.51,
+      "mem_mb_peak": 96.2,
+      "cpu_pct_mean": 6.51
+    },
+    {
+      "phase": "net/100ms-50mbit/full",
+      "container": "fog-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.34,
+      "mem_mb_peak": 26.3,
+      "cpu_pct_mean": 0.34
+    },
+    {
+      "phase": "net/100ms-50mbit/local",
+      "container": "cloud-node",
+      "samples": 2,
+      "cpu_pct_peak": 39.02,
+      "mem_mb_peak": 115.9,
+      "cpu_pct_mean": 19.67
+    },
+    {
+      "phase": "net/100ms-50mbit/local",
+      "container": "edge-node",
+      "samples": 2,
+      "cpu_pct_peak": 49.45,
+      "mem_mb_peak": 96.2,
+      "cpu_pct_mean": 31.37
+    },
+    {
+      "phase": "net/100ms-50mbit/local",
+      "container": "fog-node",
+      "samples": 2,
+      "cpu_pct_peak": 0.61,
+      "mem_mb_peak": 26.2,
+      "cpu_pct_mean": 0.48
+    },
+    {
+      "phase": "net/100ms-50mbit/partial",
+      "container": "cloud-node",
+      "samples": 2,
+      "cpu_pct_peak": 54.17,
+      "mem_mb_peak": 113.1,
+      "cpu_pct_mean": 27.15
+    },
+    {
+      "phase": "net/100ms-50mbit/partial",
+      "container": "edge-node",
+      "samples": 2,
+      "cpu_pct_peak": 49.55,
+      "mem_mb_peak": 96.4,
+      "cpu_pct_mean": 37.97
+    },
+    {
+      "phase": "net/100ms-50mbit/partial",
+      "container": "fog-node",
+      "samples": 2,
+      "cpu_pct_peak": 0.38,
+      "mem_mb_peak": 26.3,
+      "cpu_pct_mean": 0.35
+    },
+    {
+      "phase": "net/20ms-50mbit/full",
+      "container": "cloud-node",
+      "samples": 1,
+      "cpu_pct_peak": 39.8,
+      "mem_mb_peak": 118.8,
+      "cpu_pct_mean": 39.8
+    },
+    {
+      "phase": "net/20ms-50mbit/full",
+      "container": "edge-node",
+      "samples": 1,
+      "cpu_pct_peak": 4.71,
+      "mem_mb_peak": 96.3,
+      "cpu_pct_mean": 4.71
+    },
+    {
+      "phase": "net/20ms-50mbit/full",
+      "container": "fog-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.32,
+      "mem_mb_peak": 26.1,
+      "cpu_pct_mean": 0.32
+    },
+    {
+      "phase": "net/20ms-50mbit/local",
+      "container": "cloud-node",
+      "samples": 2,
+      "cpu_pct_peak": 39.97,
+      "mem_mb_peak": 122.8,
+      "cpu_pct_mean": 20.05
+    },
+    {
+      "phase": "net/20ms-50mbit/local",
+      "container": "edge-node",
+      "samples": 2,
+      "cpu_pct_peak": 49.26,
+      "mem_mb_peak": 96.4,
+      "cpu_pct_mean": 35.48
+    },
+    {
+      "phase": "net/20ms-50mbit/local",
+      "container": "fog-node",
+      "samples": 2,
+      "cpu_pct_peak": 0.44,
+      "mem_mb_peak": 26.2,
+      "cpu_pct_mean": 0.42
+    },
+    {
+      "phase": "net/20ms-50mbit/partial",
+      "container": "cloud-node",
+      "samples": 1,
+      "cpu_pct_peak": 34.85,
+      "mem_mb_peak": 116.0,
+      "cpu_pct_mean": 34.85
+    },
+    {
+      "phase": "net/20ms-50mbit/partial",
+      "container": "edge-node",
+      "samples": 1,
+      "cpu_pct_peak": 38.67,
+      "mem_mb_peak": 96.3,
+      "cpu_pct_mean": 38.67
+    },
+    {
+      "phase": "net/20ms-50mbit/partial",
+      "container": "fog-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.67,
+      "mem_mb_peak": 26.5,
+      "cpu_pct_mean": 0.67
+    },
+    {
+      "phase": "net/300ms-50mbit/full",
+      "container": "cloud-node",
+      "samples": 2,
+      "cpu_pct_peak": 38.05,
+      "mem_mb_peak": 113.0,
+      "cpu_pct_mean": 33.4
+    },
+    {
+      "phase": "net/300ms-50mbit/full",
+      "container": "edge-node",
+      "samples": 2,
+      "cpu_pct_peak": 26.53,
+      "mem_mb_peak": 95.5,
+      "cpu_pct_mean": 19.68
+    },
+    {
+      "phase": "net/300ms-50mbit/full",
+      "container": "fog-node",
+      "samples": 2,
+      "cpu_pct_peak": 0.7,
+      "mem_mb_peak": 26.3,
+      "cpu_pct_mean": 0.52
+    },
+    {
+      "phase": "net/300ms-50mbit/local",
+      "container": "cloud-node",
+      "samples": 1,
+      "cpu_pct_peak": 45.37,
+      "mem_mb_peak": 112.8,
+      "cpu_pct_mean": 45.37
+    },
+    {
+      "phase": "net/300ms-50mbit/local",
+      "container": "edge-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.48,
+      "mem_mb_peak": 95.5,
+      "cpu_pct_mean": 0.48
+    },
+    {
+      "phase": "net/300ms-50mbit/local",
+      "container": "fog-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.01,
+      "mem_mb_peak": 26.2,
+      "cpu_pct_mean": 0.01
+    },
+    {
+      "phase": "net/300ms-50mbit/partial",
+      "container": "cloud-node",
+      "samples": 1,
+      "cpu_pct_peak": 26.35,
+      "mem_mb_peak": 111.7,
+      "cpu_pct_mean": 26.35
+    },
+    {
+      "phase": "net/300ms-50mbit/partial",
+      "container": "edge-node",
+      "samples": 1,
+      "cpu_pct_peak": 25.35,
+      "mem_mb_peak": 95.5,
+      "cpu_pct_mean": 25.35
+    },
+    {
+      "phase": "net/300ms-50mbit/partial",
+      "container": "fog-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.39,
+      "mem_mb_peak": 26.3,
+      "cpu_pct_mean": 0.39
+    },
+    {
+      "phase": "small/partial",
+      "container": "cloud-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.29,
+      "mem_mb_peak": 40.4,
+      "cpu_pct_mean": 0.29
+    },
+    {
+      "phase": "small/partial",
+      "container": "edge-node",
+      "samples": 1,
+      "cpu_pct_peak": 52.48,
+      "mem_mb_peak": 40.1,
+      "cpu_pct_mean": 52.48
+    },
+    {
+      "phase": "small/partial",
+      "container": "fog-node",
+      "samples": 1,
+      "cpu_pct_peak": 0.65,
+      "mem_mb_peak": 26.3,
+      "cpu_pct_mean": 0.65
+    }
+  ]
+}

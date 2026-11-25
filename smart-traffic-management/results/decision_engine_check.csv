@@ -1,0 +1,9 @@
+experiment,config,measured_best,engine_recommendation,match
+workload,small,local,local,True
+workload,medium,partial,partial,True
+workload,large,partial,partial,True
+network,20/50,partial,partial,True
+network,100/50,partial,partial,True
+network,300/50,local,partial,False
+network,100/10,local,local,True
+network,100/200,partial,partial,True

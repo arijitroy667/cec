@@ -1,0 +1,98 @@
+# ===========================================================================
+# Smart Traffic Management System - Edge / Fog / Cloud deployment
+#
+#   Device Layer  -> simulated inside the Edge Node (Roadside Units, sensors)
+#   edge-node     -> Edge Layer  (Data Acquisition & Actuation)     host port 8000 -> container 5000
+#   fog-node      -> Fog Layer   (Distributed Intelligence)         port 6000
+#   cloud-node    -> Cloud Layer (Centralized Intelligence / TMS)   port 7000
+#
+# Each pair of layers shares exactly one network, mirroring slide 31:
+#   edge_fog_lan        Edge <-> Fog   (few network hops)
+#   edge_cloud_wan      Edge <-> Cloud (multiple internet hops, offloading channel)
+#   fog_cloud_backhaul  Fog  <-> Cloud (aggregated data / central control)
+#
+# Resource limits model slide 23 "Storage / Compute":
+#   Edge  = Constrained / Limited      (0.5 CPU, 512 MB)
+#   Fog   = Moderate / Scalable        (1.0 CPU, 512 MB)
+#   Cloud = Virtually Unlimited        (2.0 CPU, 2 GB, parallel workers)
+#
+# Usage:  docker compose up -d --build
+# ===========================================================================
+name: smart-traffic-management
+
+services:
+  cloud-node:
+    build:
+      context: .
+      dockerfile: cloud_node/Dockerfile
+    image: stms-cloud-node:1.0
+    container_name: cloud-node
+    hostname: cloud-node
+    environment:
+      CLOUD_WORKERS: "2"
+    cpus: 2.0
+    mem_limit: 2g
+    ports:
+      - "7000:7000"
+    volumes:
+      - traffic_data_lake:/data
+    networks:
+      - edge_cloud_wan
+      - fog_cloud_backhaul
+
+  fog-node:
+    build:
+      context: .
+      dockerfile: fog_node/Dockerfile
+    image: stms-fog-node:1.0
+    container_name: fog-node
+    hostname: fog-node
+    environment:
+      CLOUD_URL: "http://cloud-node:7000"
+      FOG_CLOUD_RTT_MS: "60"
+      FOG_CLOUD_BANDWIDTH_MBIT: "200"
+    cpus: 1.0
+    mem_limit: 512m
+    ports:
+      - "6000:6000"
+    depends_on:
+      - cloud-node
+    networks:
+      - edge_fog_lan
+      - fog_cloud_backhaul
+
+  edge-node:
+    build:
+      context: .
+      dockerfile: edge_node/Dockerfile
+    image: stms-edge-node:1.0
+    container_name: edge-node
+    hostname: edge-node
+    environment:
+      CLOUD_URL: "http://cloud-node:7000"
+      FOG_URL: "http://fog-node:6000"
+      EDGE_CLOUD_RTT_MS: "100"          # slide 23: Cloud latency 100-500 ms
+      EDGE_CLOUD_BANDWIDTH_MBIT: "50"
+      EDGE_FOG_RTT_MS: "10"             # slide 23: Fog latency 10-50 ms
+      EDGE_FOG_BANDWIDTH_MBIT: "100"
+      WAN_EMULATION: "app"              # app | tc | off   (tc needs NET_ADMIN + sch_netem)
+    cap_add:
+      - NET_ADMIN                       # only used when WAN_EMULATION=tc
+    cpus: 0.5
+    mem_limit: 512m
+    ports:
+      - "8000:5000"                     # Edge Node REST API on http://localhost:8000
+    depends_on:
+      - cloud-node
+      - fog-node
+    networks:
+      - edge_fog_lan
+      - edge_cloud_wan
+
+networks:
+  edge_fog_lan:
+  edge_cloud_wan:
+  fog_cloud_backhaul:
+
+volumes:
+  traffic_data_lake:
